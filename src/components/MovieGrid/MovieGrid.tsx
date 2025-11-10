@@ -8,9 +8,9 @@ interface MovieGridProps {
 
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
-const PLACEHOLDER = "/public/placeholder.svg";
+const PLACEHOLDER = "/placeholder.svg";
 
-export const MovieGrid = ({ movies, onSelect }: MovieGridProps) => {
+const MovieGrid = ({ movies, onSelect }: MovieGridProps) => {
   if (!movies.length) return null;
 
   return (
@@ -38,3 +38,5 @@ export const MovieGrid = ({ movies, onSelect }: MovieGridProps) => {
     </ul>
   );
 };
+
+export default MovieGrid;

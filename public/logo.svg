@@ -1,0 +1,8 @@
+<svg width="200" height="300" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="199" height="299" fill="#F0F0F0" stroke="#DDDDDD"/>
+  <path d="M160 80H40C34.4772 80 30 84.4772 30 90V210C30 215.523 34.4772 220 40 220H160C165.523 220 170 215.523 170 210V90C170 84.4772 165.523 80 160 80Z" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="70" cy="120" r="15" fill="#BBBBBB"/>
+  <path d="M120 180L140 160L160 180" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 190L80 150L100 170L120 150" stroke="#BBBBBB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#888888" transform="translate(0, 40)">Image Not Found</text>
+</svg>

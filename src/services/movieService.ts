@@ -10,7 +10,7 @@ interface MoviesResult {
   totalResults: number;
 }
 
-export const fetchMovies = async (query: string): Promise<MoviesResult> => {
+const fetchMovies = async (query: string): Promise<MoviesResult> => {
   const { data } = await api.get<FetchMoviesResponse>("/search/movie", {
     params: { query },
   });
@@ -20,3 +20,5 @@ export const fetchMovies = async (query: string): Promise<MoviesResult> => {
     totalResults: data.total_results,
   };
 };
+
+export default  fetchMovies;

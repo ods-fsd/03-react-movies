@@ -5,7 +5,7 @@ interface SearchBarProps {
   onSubmit: (query: string) => void;
 }
 
-export const SearchBar = ({ onSubmit }: SearchBarProps) => {
+const SearchBar = ({ onSubmit }: SearchBarProps) => {
   const handleSubmit = (formData: FormData) => {
     const value = (formData.get("query") as string)?.trim();
 
@@ -46,3 +46,5 @@ export const SearchBar = ({ onSubmit }: SearchBarProps) => {
     </header>
   );
 };
+
+export default SearchBar;

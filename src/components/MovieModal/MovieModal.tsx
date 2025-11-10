@@ -7,14 +7,14 @@ const modalRoot = document.getElementById("modal-root")!;
 
 const BACKDROP_URL = "https://image.tmdb.org/t/p/original";
 const POSTER_URL = "https://image.tmdb.org/t/p/w500";
-const PLACEHOLDER = "/public/placeholder.svg";
+const PLACEHOLDER = "/placeholder.svg";
 
 interface MovieModalProps {
   movie: Movie;
   onClose: () => void;
 }
 
-export const MovieModal = ({ movie, onClose }: MovieModalProps) => {
+const MovieModal = ({ movie, onClose }: MovieModalProps) => {
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent): void => {
       if (e.key === "Escape") onClose();
@@ -78,3 +78,6 @@ export const MovieModal = ({ movie, onClose }: MovieModalProps) => {
     modalRoot
   );
 };
+
+
+export default MovieModal;
